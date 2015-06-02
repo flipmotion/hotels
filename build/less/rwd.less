@@ -12,14 +12,117 @@
 }
 /* Portrait tablets and small desktops */
 @media (min-width: 768px) and (max-width: 991px) {
-
+	body .unical-btn {
+		transform: translate3d(-23px,47px,0px);
+		width: 150px;
+		height: 144px;
+	}
+	.header .header-lvl-2 .item {
+		margin-right: 5px;
+	}
+	.header .header-lvl-2 .pull-right .item {
+		margin-left: 5px;
+	}
+	.header .header-lvl-2 {
+		padding: 40px 0 10px;
+	}
 }
 
 /* Landscape phones and portrait tablets */
 @media (min-width: 480px) and (max-width: 767px) {
-	
+	.header {
+		padding-top: 50px;
+	}
+	.header .header-lvl-1 {
+		text-align: center;
+	}
+	.header .navbar.navbar-default {
+		position: fixed;
+		top:0;
+		left: 0;
+		z-index: 1;
+		width: 100%;
+		background-color: rgba(51,120,191,.9);
+	}
+	.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+		background-color: rgba(51,120,191,.9);
+	}
+	.navbar-default .navbar-toggle .icon-bar {
+		background-color: #fff;
+	}
+	.header .header-lvl-1 .pull-right {
+		margin-top: 20px;
+	}
+	.flex {
+		display: flex;
+		  justify-content: space-around;
+	}
+	.header .header-lvl-2 .item {
+		margin-right: 0;
+	}
+	.header .header-lvl-2 .pull-right .item {
+		margin-left: 0;
+	}
+	.header .header-lvl-1 .pull-right,
+	.header .header-lvl-2 .pull-right {
+		float: none !important;
+	}
 }
 
 @media (min-width:0px) and (max-width: 479px) {
-	
+	.header {
+		padding-top: 50px;
+	}
+	.header .header-lvl-2 {
+		padding-top: 80px;
+		padding-bottom: 15px;
+		background: #6196cb;
+	}
+	.header .header-lvl-1 {
+		text-align: center;
+	}
+	.header .navbar.navbar-default {
+		position: fixed;
+		top:0;
+		z-index: 1;
+		left: 0;
+		width: 100%;
+		background-color: rgba(51,120,191,.9);
+	}
+	.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+		background-color: rgba(51,120,191,.9);
+	}
+	.navbar-default .navbar-toggle .icon-bar {
+		background-color: #fff;
+	}
+	.header .header-lvl-1 .pull-right {
+		margin-top: 20px;
+	}
+	.flex {
+		display: flex;
+		justify-content: space-between;
+		flex-direction: column;
+	}
+	.header .header-lvl-2 .item {
+		margin: 15px auto !important;
+	}
+	.header .header-lvl-2 .item {
+		margin-right: 0;
+	}
+	.header .header-lvl-2 .pull-right .item {
+		margin-left: 0;
+	}
+	.header .header-lvl-1 .pull-right,
+	.header .header-lvl-2 .pull-right {
+		float: none !important;
+	}
+	.footer .footer-lvl-2 {
+		background: #6196cb;
+		padding-top: 100px;
+		.pull-right {
+			float: none !important;
+			text-align: center;
+		}
+	}
 }
+
