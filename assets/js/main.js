@@ -1,12 +1,15 @@
 $(document).ready(function() {
 		var owl = $('[data-item="slider"]');
-		
+		var date = $('[data-item="date"]');
 	$('[data-item="slider"]').owlCarousel({
 		loop:true,
 		margin:0,
 		nav:false,
 		dots:false,
 		items:1
+	});
+	date.datepicker({
+		language: "ru",
 	});
 	$('.navigation-slider .icon-left').click(function() {
 		owl.trigger('prev.owl.carousel');
